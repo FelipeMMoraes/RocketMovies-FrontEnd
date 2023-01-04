@@ -1,4 +1,4 @@
-import { FiArrowLeft, FiClock, FiStar } from 'react-icons/fi'
+import { FiArrowLeft, FiClock } from 'react-icons/fi'
 
 import { Container, Tagline, HeaderMovie, Content } from "./styles"
 
@@ -7,6 +7,7 @@ import { Paragraph } from '../../components/Paragraph'
 import { Header } from '../../components/Header'
 import { Title } from '../../components/Title'
 import { Tag } from '../../components/Tag'
+import { Rating } from '../../components/Rating'
 
 
 export function Details() {
@@ -23,11 +24,7 @@ export function Details() {
             
             <div className='HMUp'>
               <Title title='Interestellar'/>
-              <FiStar />
-              <FiStar />
-              <FiStar />
-              <FiStar />
-              <FiStar />
+              <Rating></Rating>
             </div>
 
             <div className='HMDown'>
