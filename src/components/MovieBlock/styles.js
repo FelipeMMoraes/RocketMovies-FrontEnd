@@ -12,11 +12,11 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_PINK};
 
-  > h2 {
+  > h1 {
     margin-bottom: 8px;
   }
 
-  > span {
+  > p {
     margin-top: 15px;
     margin-bottom: 15px;
   }

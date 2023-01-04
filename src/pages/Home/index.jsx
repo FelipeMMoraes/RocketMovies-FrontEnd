@@ -20,9 +20,30 @@ export function Home() {
               </HeaderPage>
 
               <Movies>
-                <MovieBlock title='Interestelar'/>
-                <MovieBlock title='Interestelar'/>
-                <MovieBlock title='Interestelar'/>
+                <MovieBlock data={{
+                    title: 'Interestellar',
+                    tags: [
+                      {id: '1', name: 'Ficção Científica'},
+                      {id: '3', name: 'Drama'},
+                      {id: '2', name: 'Familia'}
+                    ]
+                }}/>
+                <MovieBlock data={{
+                    title: 'Interestellar',
+                    tags: [
+                      {id: '1', name: 'Ficção Científica'},
+                      {id: '3', name: 'Drama'},
+                      {id: '2', name: 'Familia'}
+                    ]
+                }}/>
+                <MovieBlock data={{
+                    title: 'Interestellar',
+                    tags: [
+                      {id: '1', name: 'Ficção Científica'},
+                      {id: '3', name: 'Drama'},
+                      {id: '2', name: 'Familia'}
+                    ]
+                }}/>
               </Movies>
           </Content>
         </main>
