@@ -10,6 +10,28 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content";
+
+  main {
+    grid-area: content;
+    overflow-y: auto;
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0);
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: ${({ theme }) => theme.COLORS.PINK};
+      border-radius: 100px;
+    }
+    ::-webkit-scrollbar-button:start:decrement {
+      height: 100px;
+      display: block;
+      background-color: transparent;
+    }
+
+  }
 `;
 
 export const Form = styled.form`

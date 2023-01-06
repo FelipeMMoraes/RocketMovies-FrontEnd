@@ -16,37 +16,41 @@ export function New(){
       <Header />
 
       <main>
+        <section>
+          <Form>
 
-        <Form>
-
-          <header>
-            <ButtonText href="/" title="Voltar" icon={FiArrowLeft}/>
-            <Title title="Novo filme"/>
-          </header>
+            <header>
+              <ButtonText href="/" title="Voltar" icon={FiArrowLeft}/>
+              <Title title="Novo filme"/>
+            </header>
 
 
-          <div className='Input_top'>
-            <Input placeholder="Título"/>
-            <Input type="number" min="0" max="5" placeholder="Sua nota (de 0 a 5)"/>
-          </div>
-
-          <TextArea placeholder="Observações"/>
-
-          <div className="Tags">
-            <span>Marcadores</span>
-
-            <div className="Moviesection">
-              <MovieItem value="React"/>
-              <MovieItem isNew value="Novo Marcador"/>
+            <div className='Input_top'>
+              <Input placeholder="Título"/>
+              <Input type="number" min="0" max="5" placeholder="Sua nota (de 0 a 5)"/>
             </div>
-          </div>
 
-          <div className="button-line">
-            <Button isActive={false} title="Excluir Filme"/>
-            <Button title="Salvar alterações"/>
-          </div>
+            <TextArea placeholder="Observações"/>
 
-        </Form>   
+            <div className="Tags">
+              <span>Marcadores</span>
+
+              <div className="Moviesection">
+                <MovieItem value="Ficção Científica"/>
+                <MovieItem value="Drama"/>
+                <MovieItem value="Família"/>
+                <MovieItem isNew value="Novo Marcador"/>
+              </div>
+            </div>
+
+            <div className="button-line">
+              <Button isActive={false} title="Excluir Filme"/>
+              <Button title="Salvar alterações"/>
+            </div>
+
+          </Form>   
+          
+        </section>
 
       </main>
     </Container>
