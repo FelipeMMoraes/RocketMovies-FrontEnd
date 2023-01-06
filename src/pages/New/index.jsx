@@ -30,6 +30,13 @@ export function New(){
 
           <TextArea placeholder="Observações"/>
 
+          <div className="Tags">
+            <span>Marcadores</span>
+            <div className="Moviesection">
+
+            </div>
+          </div>
+
         </Form>   
 
       </main>

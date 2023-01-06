@@ -23,4 +23,27 @@ export const Form = styled.form`
     display: flex;
     gap: 40px;  
   }
+
+  .Tags {
+    width: 100%;
+
+    > span {
+      display: block;
+      font-size: 20px;
+      font-weight: 400;
+
+      color: ${({ theme }) => theme.COLORS.GRAY_200};
+
+      margin-bottom: 24px;
+    }
+
+    .Moviesection {
+      width: 100%;
+
+      padding: 16px;
+      border-radius: 8px;
+
+      background-color: ${({ theme }) => theme.COLORS.BLACK};
+    }
+  }
 `;
