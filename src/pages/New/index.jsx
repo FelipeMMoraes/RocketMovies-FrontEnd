@@ -4,8 +4,10 @@ import { Container, Form } from "./styles";
 
 import { ButtonText } from '../../components/ButtonText'
 import { TextArea } from '../../components/TextArea'
+import { MovieItem } from '../../components/MovieItem'
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
+import { Button } from '../../components/Button'
 import { Title } from '../../components/Title'
 
 export function New(){
@@ -25,16 +27,23 @@ export function New(){
 
           <div className='Input_top'>
             <Input placeholder="Título"/>
-            <Input placeholder="Sua nota (de 0 a 5)"/>
+            <Input type="number" min="0" max="5" placeholder="Sua nota (de 0 a 5)"/>
           </div>
 
           <TextArea placeholder="Observações"/>
 
           <div className="Tags">
             <span>Marcadores</span>
-            <div className="Moviesection">
 
+            <div className="Moviesection">
+              <MovieItem value="React"/>
+              <MovieItem isNew value="Novo Marcador"/>
             </div>
+          </div>
+
+          <div className="button-line">
+            <Button isActive={false} title="Excluir Filme"/>
+            <Button title="Salvar alterações"/>
           </div>
 
         </Form>   

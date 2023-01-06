@@ -38,6 +38,10 @@ export const Form = styled.form`
     }
 
     .Moviesection {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+
       width: 100%;
 
       padding: 16px;
@@ -46,4 +50,9 @@ export const Form = styled.form`
       background-color: ${({ theme }) => theme.COLORS.BLACK};
     }
   }
+  
+  .button-line {
+      display: flex;
+      gap: 20px;
+    }
 `;

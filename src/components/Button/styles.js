@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.button`
   width: 100%;
-  background-color: ${({ theme }) => theme.COLORS.PINK};
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  background-color: ${({ theme, isActive }) => isActive ? theme.COLORS.PINK : theme.COLORS.BLACK};
+
+  color: ${({ theme, isActive }) => isActive ? theme.COLORS.BACKGROUND_900 : theme.COLORS.PINK};
 
   display: flex;
   align-items: center;
