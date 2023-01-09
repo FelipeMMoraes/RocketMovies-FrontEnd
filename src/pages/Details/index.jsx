@@ -1,5 +1,7 @@
 import { FiArrowLeft, FiClock } from 'react-icons/fi'
 
+import { Link } from 'react-router-dom'
+
 import { Container, Tagline, HeaderMovie, Content } from "./styles"
 
 import { ButtonText } from '../../components/ButtonText'
@@ -17,9 +19,9 @@ export function Details() {
 
       <main>
         <Content>
-
-          <ButtonText title='Voltar' icon={FiArrowLeft} />
-
+          <Link to="/">
+            <ButtonText title='Voltar' icon={FiArrowLeft} />
+          </Link>
           <HeaderMovie>
             
             <div className='HMUp'>

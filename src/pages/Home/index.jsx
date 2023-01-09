@@ -1,9 +1,11 @@
-import { FiPlus } from 'react-icons/fi'
+import { FiPlus } from 'react-icons/fi';
 
-import { Container, HeaderPage, Content, Movies } from './styles'
-import { Header } from '../../components/Header'
-import { Title } from '../../components/Title'
-import { Button } from '../../components/Button'
+import { Link } from 'react-router-dom';
+
+import { Container, HeaderPage, Content, Movies } from './styles';
+import { Header } from '../../components/Header';
+import { Title } from '../../components/Title';
+import { Button } from '../../components/Button';
 import { MovieBlock } from '../../components/MovieBlock'
 
 export function Home() {
@@ -16,7 +18,9 @@ export function Home() {
 
               <HeaderPage>
                 <Title title='Meus filmes'/>
-                <Button title='Adicionar filme' icon={FiPlus}/>
+                <Link to="/new">
+                  <Button title='Adicionar filme' icon={FiPlus}/>
+                </Link>
               </HeaderPage>
 
               <Movies>

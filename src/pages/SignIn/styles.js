@@ -37,6 +37,14 @@ export const Form = styled.form`
   > button:first-of-type {
     margin-bottom: 42px;
   }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: ${({ theme }) => theme.COLORS.PINK};
+  }
 `;
 
 export const Background = styled.div`

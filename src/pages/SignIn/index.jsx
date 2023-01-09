@@ -1,5 +1,7 @@
 import { FiMail, FiLock } from 'react-icons/fi'
 
+import { Link } from 'react-router-dom'
+
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { ButtonText } from '../../components/ButtonText'
@@ -26,7 +28,9 @@ export function SignIn(){
 
         <Button title="Entrar"/>
 
-        <ButtonText href="/" title="Criar Conta"/>
+        <Link to="/register">
+          Criar conta
+        </Link>
       </Form> 
 
       <Background />
